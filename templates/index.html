@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>DermaMatch</title>
+  </head>
+  <body>
+
+    <!-- navigatin bar -->
+
+    <header class="bg-header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/static/images/logo.png" alt="Logo" width="130" height="130" >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#features">Recommend</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#how">Working</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container py-5">
+
+        <!-- For demo purpose -->
+        <header class="text-white text-center">
+          <h1 class="text-white fw-bold text-center pt-5 pb-3">
+            Recommend Skin Treatment
+          </h1>
+            <p class="lead mb-0"> Please upload a clear, well-lit image of your skin concern.</p>
+            <img src="https://bootstrapious.com/i/snippets/sn-img-upload/image.svg" alt="" width="150" class="mb-4">
+        </header>
+    
+    
+        <div class="row py-4">
+            <div class="col-lg-6 mx-auto">
+    
+                <!-- Upload image input-->
+                <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                    <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                    <div class="input-group-append">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                    </div>
+                </div>
+                <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+    
+            </div>
+        </div>
+    </div>
+      <!-- <section class="hero-section py-5" >
+        <div class="container py-3">
+          <div class="row g-5">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="col-12 col-lg-6">
+                <h1 class="text-white fw-bold">
+                  Delicious Delivered: Discover a World of Flavors at Your
+                  Doorstep
+                </h1>
+                <p class="text-white pt-4">
+                  Discover a wide range of delectable dishes from various
+                  cuisines. From appetizers and main courses to desserts and
+                  beverages, we have something to satisfy every craving.
+                </p>
+                <button class="btn mt-5">Order Now</button>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="d-flex justify-content-end">
+                  <img src="assets/hero.png" class="hero-img" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </header>
+    <main>
+      <section class="featured py-5" id="features">
+        <div class="container">
+          <h2 class="text-dark fw-bold text-center pt-5 pb-5">
+            Different Skin Types
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="row g-5">
+            Normal Skin\Normal Skin
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/pizza.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Dry Skin</h3>
+                  <p class="card-text">
+                    Characteristics: Feels tight and rough, may be flaky or scaly, 
+                    dull appearance, small pores, may show wrinkles more prominently. Feels less elastic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/sushi.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Oily Skin</h3>
+                  <p class="card-text">
+                    Characteristics: Shiny appearance, especially 
+                    in the T-zone (forehead, nose, and chin), enlarged pores, prone to blackheads and breakouts.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Combination Skin</h3>
+                  <p class="card-text">
+                    Characteristics: Oily T-zone (forehead, nose, and chin) and drier cheeks, 
+                    can have enlarged pores in oily areas, and may experience breakouts and dryness simultaneously.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how">
+        <div class="container">
+          <h2 class="text-dark fw-bold text-center pt-5 pb-3">
+            How DermaMatch Works
+          </h2>
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- <section class="testimonials">
+        <div class="container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <div class="testimonial-card">
+                          <img
+                            src="assets/sarah.jpg"
+                            width="150px"
+                            class="rounded-circle pb-4"
+                            alt=""
+                          />
+                          <p class="testimonial-text pb-2">
+                            FoodieXpress has transformed the way I enjoy meals.
+                            The convenience of ordering my favorite dishes from
+                            local restaurants and having them delivered to my
+                            doorstep is simply fantastic.
+                          </p>
+                          <h3 class="testimonials-name">Sarah M</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <div
+                        class="d-flex flex-column align-items-center justify-content-center text-center"
+                      >
+                        <div class="testimonial-card">
+                          <img
+                            src="assets/john.jpg"
+                            width="150px"
+                            class="rounded-circle pb-4"
+                            alt=""
+                          />
+                          <p class="testimonial-text pb-2">
+                            FoodieXpress has transformed the way I enjoy meals.
+                            The convenience of ordering my favorite dishes from
+                            local restaurants and having them delivered to my
+                            doorstep is simply fantastic.
+                          </p>
+                          <h3 class="testimonials-name">John j</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- <footer>
+      <div class="container py-5" id="contact">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h3 class="fw-bold pb-3">Visit us</h3>
+            <p>
+              1234 Foodie Lane, Cityville, <br />
+              State, Country
+            </p>
+            <a href="mailto:info@foodiexpress.com" class="text-dark"
+              >info@foodieexpress.com</a
+            >
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3 class="fw-bold pb-3">Our Link</h3>
+            <div class="d-flex flex-column">
+              <a href="#" class="text-dark">Home</a>
+              <a href="#" class="text-dark">How it works</a>
+              <a href="#" class="text-dark">Features</a>
+              <a href="#" class="text-dark">Contact</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3 class="fw-bold pb-3">Our Link</h3>
+            <div class="d-flex">
+              <a href="#" class="text-dark"
+                ><ion-icon name="logo-facebook" class="icon"></ion-icon
+              ></a>
+              <a href="#" class="text-dark px-3"
+                ><ion-icon name="logo-instagram" class="icon"></ion-icon
+              ></a>
+              <a href="#" class="text-dark px-3"
+                ><ion-icon name="logo-github" class="icon"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center copyright"> &copy; 2023 all right reserved by foodiexpress</p>
+    </footer> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
