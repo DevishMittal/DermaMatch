@@ -40,7 +40,13 @@
                 <a class="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link" href="#features">Recommend</a>
+                <a class="nav-link" href="#">Recommend</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#features">Skin-Types</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#features2">Skin-Diseases</a>
               </li>
               <li class="nav-item px-2">
                 <a class="nav-link" href="#how">Working</a>
@@ -53,9 +59,10 @@
 
         <!-- For demo purpose -->
         <header class="text-white text-center">
-          <h1 class="text-white fw-bold text-center pt-5 pb-3">
-            Recommend Skin Treatment
-          </h1>
+          <h1 class="fw-bold text-center pt-5 pb-3" style="background-image: linear-gradient(to right, #f38e35, #95f971); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            DERMA-MATCH
+        </h1>
+        
             <p class="lead mb-0"> Please upload a clear, well-lit image of your skin concern.</p>
             <img src="https://bootstrapious.com/i/snippets/sn-img-upload/image.svg" alt="" width="150" class="mb-4">
         </header>
@@ -106,17 +113,28 @@
     <main>
       <section class="featured py-5" id="features">
         <div class="container">
-          <h2 class="text-dark fw-bold text-center pt-5 pb-5">
+          
+          <h2 class="text-dark fw-bold text-center pt-5 pb-5" style="background-image: linear-gradient(to right, #a9ff38, #fc9246); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
             Different Skin Types
           </h2>
         </div>
 
         <div class="container">
           <div class="row g-5">
-            Normal Skin\Normal Skin
             <div class="col-12 col-lg-3">
               <div class="card shadow-sm border-0 rounded">
-                <img src="assets/pizza.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Normal Skin</h3>
+                  <p class="card-text">
+                    Characteristics: Neither too dry nor too oily,
+                     balanced complexion, small pores, minimal blemishes, and radiant appearance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
                 <div class="card-body">
                   <h3 class="card-title">Dry Skin</h3>
                   <p class="card-text">
@@ -128,7 +146,6 @@
             </div>
             <div class="col-12 col-lg-3">
               <div class="card shadow-sm border-0 rounded">
-                <img src="assets/sushi.jpg" class="card-img-top" alt="" />
                 <div class="card-body">
                   <h3 class="card-title">Oily Skin</h3>
                   <p class="card-text">
@@ -140,13 +157,154 @@
             </div>
             <div class="col-12 col-lg-3">
               <div class="card shadow-sm border-0 rounded">
-                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
                 <div class="card-body">
                   <h3 class="card-title">Combination Skin</h3>
                   <p class="card-text">
                     Characteristics: Oily T-zone (forehead, nose, and chin) and drier cheeks, 
                     can have enlarged pores in oily areas, and may experience breakouts and dryness simultaneously.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured py-5" id="features2">
+        <div class="container">
+          <h2 class=" fw-bold text-center pt-5 pb-5" style="background-image: linear-gradient(to right, #f38e35, #95f971); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Different Skin Diseases
+            </h2>
+        </div>
+
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                  <h3 class="card-title">Desquamation disease</h3>
+                  <p class="card-text">
+                    Desquamation refers to the shedding or peeling of the skin's outer layer. 
+                    It can occur due to various factors, including infections, inflammatory skin disorders, and environmental factors like sun.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/pizza.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Nevi moles</h3>
+                  <p class="card-text">
+                    skin growths caused by clusters of pigment cells. While most are harmless, some may become cancerous. 
+                    Regular monitoring and dermatologist check-ups are important for detecting any changes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/sushi.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Diaper rash</h3>
+                  <p class="card-text">
+                    Diaper rash is a common skin irritation in babies caused by prolonged exposure to urine or feces. It manifests as red,
+                    inflamed patches on the buttocks and genital area.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Acne </h3>
+                  <p class="card-text">
+                    Acne is a common skin condition characterized by pimples, blackheads, and whiteheads. 
+                    It is caused by clogged hair follicles, hormonal changes, and genetics.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Actinic Cheilitis</h3>
+                  <p class="card-text">
+                    Actinic cheilitis is a precancerous condition causing dry, cracked lips and lesions. 
+                    It is primarily caused by sun exposure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Chapped feet</h3>
+                  <p class="card-text">
+                    Chapped feet, or fissured heels, result from dry, cracked skin on the feet caused by factors 
+                    like cold weather and low humidity.
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Dyshidrosis</h3>
+                  <p class="card-text">
+                    Dyshidrosis skin condition with itchy blisters on the hands or feet. Its cause is often unknown, but stress
+                     or allergies can trigger it.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Psoriasis </h3>
+                  <p class="card-text">
+                    Psoriasis is a chronic autoimmune condition causing red, scaly patches due to rapid skin cell growth.It may involve genetics and triggers like stress.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Chondrodermatitis </h3>
+                  <p class="card-text">
+                    Chondrodermatitis nodularis helicis is a painful lump formation on the 
+                    outer ear due to pressure or friction. It commonly occurs who sleep on the affected side.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Rosacea </h3>
+                  <p class="card-text">
+                    Rosacea is a chronic skin condition causing redness, visible blood vessels, 
+                    and bumps on the face. Triggers include sunlight, stress, and certain 
+                    foods.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="card shadow-sm border-0 rounded">
+                <img src="assets/lavacake.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                  <h3 class="card-title">Eczema </h3>
+                  <p class="card-text">
+                    Eczema, or atopic dermatitis, is a chronic skin condition 
+                    characterized by inflamed, itchy patches. Triggers include allergens and stress. Symptoms vary 
+                    but commonly include redness and swelling.
                 </div>
               </div>
             </div>
@@ -164,36 +322,20 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Accordion Item #1
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Working of the Model</strong> Our system utilizes machine learning algorithms to analyze images of 
+                  infected areas provided by users. Upon receiving a picture, our model identifies patterns and 
+                  characteristics associated with various skin diseases. Based on this analysis, 
+                  we determine the most probable condition the patient is suffering from. 
+                  We then provide personalized recommendations for over-the-counter medications that can help alleviate symptoms. 
+                  Additionally, if our model doesn't find a match or if the condition seems severe, 
+                  we strongly advise users to seek professional medical advice from a doctor. 
+                  Our goal is to provide immediate assistance and guidance for common skin conditions 
+                  while also prioritizing the importance of 
+                  consulting with a healthcare professional for accurate diagnosis and treatment
                 </div>
               </div>
             </div>
