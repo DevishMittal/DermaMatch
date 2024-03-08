@@ -133,7 +133,6 @@ class LoginForm(FlaskForm):
 
     submit = SubmitField('Login')
 
-
 @app.route('/')
 def home():
     return render_template('dashboard.html')
